@@ -1,0 +1,122 @@
+@import "Panel.scss";
+
+.catalog {
+  &-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  &-container {
+    grid-template-rows: 1fr;
+    grid-template-columns: 255px 1fr;
+    gap: 40px;
+  }
+  &--grid {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+  &--grid-content {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 60px;
+    column-gap: 30px;
+  }
+
+  &-filters__panel {
+    padding: 32px 0px;
+    width: 100%;
+  }
+  &-content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+  &-filter__panel--toolbar {
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-filter__panel--toolbar {
+    & > *:last-child {
+      margin-left: auto;
+    }
+    & > *:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+}
+.filter {
+  &-lines {
+    height: 100%;
+  }
+  &-nav__lines {
+    height: 100%;
+  }
+  &--icon {
+    background-image: url("./image/filter-1.svg");
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 2px;
+  }
+  &__info {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &-lines--list {
+    height: 100%;
+    & > *:not(:last-child) {
+      margin-right: 20px;
+      color: #9a9ca5;
+    }
+
+    & > *:last-child {
+      color: #424551;
+    }
+    & > *:hover {
+      color: #424551;
+    }
+    & > * {
+      display: flex;
+      cursor: pointer;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      text-transform: capitalize;
+    }
+  }
+}
+.panel {
+  &-filter--text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1e212c;
+    text-align: left;
+  }
+  &-filter {
+    width: 100%;
+  }
+}
+.cross {
+  margin-right: 8px;
+  position: relative;
+  top: 3px;
+}
+.hide-filter__btn {
+  padding: 0px 32px;
+  width: 255px;
+  left: 345px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 44px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.bottom--padd {
+  padding-bottom: 160px;
+}

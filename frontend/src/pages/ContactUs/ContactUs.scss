@@ -1,0 +1,105 @@
+.contact-us {
+  &__body {
+    padding-top: 40px;
+    padding-bottom: 180px;
+    & > *:first-child {
+      margin-right: 251px;
+    }
+  }
+  &--list {
+    & > * {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 150%;
+      color: #9a9ca5;
+      white-space: nowrap;
+    }
+    & > *:hover {
+      color: #17696a;
+    }
+  }
+  &__head {
+    margin-bottom: 32px;
+  }
+  &--title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1e212c;
+  }
+  &__detail-list {
+    color: #17696a;
+    margin-bottom: 60px;
+    & > * {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    & > *:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__detail-item {
+    & > *:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+  &__item-text {
+    color: #424551;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+  }
+  &__form-wrap--head {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1e212c;
+  }
+  &--table {
+    border-collapse: collapse;
+    tr {
+      border: none !important;
+      margin-bottom: 24px;
+    }
+    input {
+      border: 1px solid #d7dadd;
+      border-radius: 4px;
+      padding: 13px 173px 13px 16px;
+    }
+    label {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: #424551;
+      margin-right: 8px;
+    }
+    #message {
+      border: 1px solid #d7dadd;
+      border-radius: 4px;
+      width: 100%;
+      height: 130px;
+      resize: none;
+      padding-top: 13px;
+      padding-left: 16px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: #9a9ca5;
+      outline: none;
+    }
+  }
+  &__form--btn {
+    padding: 0px 40px;
+    background: #17696a;
+    border-radius: 4px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    margin-top: 60px;
+    color: white;
+  }
+}

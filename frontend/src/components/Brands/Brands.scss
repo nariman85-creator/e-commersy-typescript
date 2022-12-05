@@ -1,0 +1,39 @@
+.brands {
+  &-content {
+    padding: 80px 0px;
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    & > *:not(:first-child) {
+      margin-left: auto;
+    }
+    & > * :hover {
+      box-shadow: 0px 0px 5px 7px rgba(154, 156, 165, 0.08);
+      cursor: pointer;
+    }
+  }
+  &--icon {
+    width: 120px;
+    height: 64px;
+    display: inline-block;
+  }
+}
+.sentinal {
+  background-image: url("../../assets//images/brands/Sentinal\ Consulting\ Logo.svg");
+}
+.del-mar {
+  background-image: url("../../assets/images/brands/Del\ Mar\ Strategy\ Logo.svg");
+}
+.for-sale {
+  background-image: url("../../assets/images/brands/For\ Sale\ Logo.svg");
+}
+.higher {
+  background-image: url("../../assets/images/brands/Higher\ Fit\ Logo\ -\ Untitled\ Page.svg");
+}
+.indepth {
+  background-image: url("../../assets/images/brands/InDepth\ Consulting\ Logo\ -\ Untitled\ Page.svg");
+}
+.health {
+  background-image: url("../../assets/images/brands/National\ Health\ Logo.svg");
+}

@@ -1,0 +1,116 @@
+.fashion {
+  &-blog__contents {
+    & > *:not(:last-child) {
+      margin-right: 78px;
+    }
+  }
+  &-blog__body {
+    margin-bottom: 180px;
+  }
+  &-blog__content {
+    & > *:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+  &-blog__title {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1e212c;
+  }
+  &-blog__head {
+    padding: 32px 0px;
+  }
+  &-blog__input--box {
+    position: relative;
+  }
+  &-blog__panel--item-wrap {
+    & > *:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+  &-blog__input {
+    border: 1px solid #d7dadd;
+    border-radius: 4px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #9a9ca5;
+    padding: 12px 221px 12px 16px;
+  }
+  &-blog__input--icon {
+    position: absolute;
+    top: 48px;
+    right: 14px;
+    width: 16px;
+    height: 16px;
+  }
+  &-blog--panel__item--title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: #1e212c;
+    margin-bottom: 24px;
+  }
+  &-blog__categories--list {
+    & > *:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    & > * {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &-blog--panel__cards {
+    border-bottom: 1px solid #e5e8ed;
+    padding-bottom: 32px;
+  }
+  &-blog--card__img {
+    margin-right: 20px;
+  }
+  &-blog--card__date {
+    align-items: center;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #787a80;
+  }
+  &-blog--card__date--icon {
+    margin-right: 8px;
+  }
+  &-blog--card__descr--text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1e212c;
+  }
+  &-blog--card:hover .fashion-blog--card__descr--text {
+    color: #17696a;
+  }
+  &-blog--tags__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    & > * {
+      padding: 5.5px 16px;
+      border: 1px solid #d7dadd;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 150%;
+      color: #787a80;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &-blog--tags__item:hover {
+    background: #17696a;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+}

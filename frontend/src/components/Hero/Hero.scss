@@ -1,0 +1,123 @@
+.hero {
+  &-body {
+    position: relative;
+  }
+  &-carousel {
+    position: relative;
+  }
+}
+.carousel {
+  &-hero__inner{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transition: transform .5s ease-in-out;
+  }
+  &-item {
+    padding-top: 140px;
+    padding-bottom: 415px;
+    background-image: url("../../assets/images/Hero/image\ \(5\).png");
+    background-position: 60% 2px;
+    background-repeat: no-repeat;
+    position: relative;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+  }
+
+  &-item__title {
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1e212c;
+    margin-bottom: 12px;
+  }
+  &-item__text {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    color: #1e212c;
+    margin-bottom: 60px;
+  }
+  &-control {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 200;
+  }
+  &-next__control {
+    margin-right: 5px;
+    margin-left: auto;
+  }
+  &-prev__control {
+    margin-left: 5px;
+  }
+  &-btn{
+  color: #17696a;
+
+  }
+}
+.prev-control__icon {
+  background-color: #fdf1e9;
+  border-radius: 50%;
+  background-image: url("../../assets/images/Hero/Left.svg");
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+.next-control__icon {
+  background-color: #fdf1e9;
+  border-radius: 50%;
+  background-image: url("../../assets/images/Hero/Right.svg");
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+.left--btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-right: 24px;
+}
+
+.indicators-hero__list {
+  position: absolute;
+  bottom: 180px;
+  & > *:not(:last-child) {
+    margin-right: 4px;
+  }
+  & > * {
+    position: relative;
+    color: #8c8384;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 150%;
+    width: 178px;
+
+  }
+  & > *::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 2px;
+    background-color: #8c8384;
+    display: block;
+    margin-top: 12px;
+  }
+  & > *.active {
+    color: #424551;
+  }
+  & > *.active::before {
+    background-color: #424551;
+  }
+}

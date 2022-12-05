@@ -1,0 +1,92 @@
+.product-details {
+  &__wrap {
+    & > *:first-child {
+      flex: 0 0 735px;
+    }
+    & > *:not(:last-child) {
+      margin-right: 105px;
+    }
+  }
+  &__info {
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+    & > *:not(:last-child) {
+      margin-bottom: 48px;
+    }
+  }
+  &--head__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1e212c;
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  &--head__description {
+    margin-bottom: 20px;
+  }
+  &__list {
+    & > * {
+      margin-left: 17px;
+    }
+    & > *:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  }
+}
+.color-item--list {
+  & > *:not(:last-child) {
+    margin-right: 15px;
+  }
+  & > *:not(:last-child) {
+    position: relative;
+  }
+  & > *:not(:last-child)::after {
+    content: "/";
+    display: inline-block;
+    position: absolute;
+    margin: 0px 5px;
+  }
+  .color--item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+  }
+}
+.details-product--info__text {
+  margin-right: 5px;
+}
+.care--list {
+  & > * {
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+  }
+}
+.details-product--info__icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.hand--wash {
+  background-image: url("./image/hand-wash.svg");
+}
+.no--iron {
+  background-image: url("./image/no-ironing.svg");
+}
+.bleach--icon {
+  background-image: url("./image/no-bleach.svg");
+}
+.thumble--icon {
+  background-image: url("./image/no-tumble-dry.svg");
+}
+.brand--text{
+  text-transform: capitalize;
+}

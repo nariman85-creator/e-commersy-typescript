@@ -1,0 +1,39 @@
+[
+ {
+  "id":"1",
+  "text":"Menswear 2020",
+  "title":"New collection",
+  "imageUrl":"../assets/images/Hero/image (5).png"
+ },
+  {
+    "id": "2",
+    "text": "Menswear 2020",
+    "title": "New collection",
+    "imageUrl": "../assets/images/Hero/image (5).png"
+  },
+ {
+  "id":"3",
+  "text":"Menswear 2020",
+  "title":"New collection",
+  "imageUrl":"../assets/images/Hero/image (5).png"
+ },
+ {
+  "id":"4",
+  "text":"Menswear 2020",
+  "title":"New collection",
+  "imageUrl":"../assets/images/Hero/image (5).png"
+ },
+ {
+  "id":"5",
+  "text":"Menswear 2020",
+  "title":"New collection",
+  "imageUrl":"../assets/images/Hero/image (5).png"
+ },
+ {
+  "id":"6",
+  "text":"Menswear 2020",
+  "title":"New collection",
+  "imageUrl":"../assets/images/Hero/image (5).png"
+ }
+
+]

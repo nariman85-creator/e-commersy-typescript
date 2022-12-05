@@ -1,0 +1,219 @@
+.card-body.success {
+  height: 680px;
+  overflow: hidden;
+
+  .card {
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16),
+      0px 30px 24px -10px rgba(154, 156, 165, 0.1),
+      0px 12px 10px -6px rgba(154, 156, 165, 0.08),
+      0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  }
+  .card-feature {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 18px;
+  }
+  .card-image--slider__wrap {
+    display: flex;
+    transition: translate 0.3s ease-in-out;
+    & > * {
+      max-width: 100%;
+      min-width: 100%;
+    }
+  }
+  .card-icon__box {
+    display: none;
+  }
+
+  input[type="checkbox"].active {
+    border: 1px solid #17696a;
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #d7dadd;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #d7dadd;
+    cursor: pointer;
+  }
+  input[type="radio"].active {
+    border: 1px solid #17696a;
+  }
+
+  .product-properties {
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .product-current__price {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: #ff4242;
+    margin-right: 12px;
+  }
+  .product-old__price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-decoration-line: line-through;
+    color: #787a80;
+  }
+  .product-price {
+    display: flex;
+    align-items: flex-end;
+  }
+  .product-size__list {
+    counter-reset: mycounter 35;
+    & > * {
+      position: relative;
+    }
+    & > *::before {
+      counter-increment: mycounter;
+      content: counter(mycounter);
+      position: absolute;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 15%;
+      cursor: pointer;
+    }
+    & > *:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+  .product-color__list {
+    & > * {
+      border-radius: 50%;
+      border: 1px solid #d7dadd;
+      padding: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    & > *.active {
+      border: 1px solid #17696a;
+    }
+    & > li:nth-child(1) input {
+      background-color: black;
+    }
+    & > li:nth-child(2) input {
+      background-color: brown;
+    }
+    & > li:nth-child(3) input {
+      background-color: black;
+    }
+
+    & > *:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+  .btn-add {
+    width: 100%;
+    background: #17696a;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+  }
+}
+.card {
+  cursor: pointer;
+  &-img__top {
+    position: relative;
+  }
+  &-raiting {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  &-descr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 0px;
+  }
+  &-like {
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 4px;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      transition: background-color 0.3s ease-in-out;
+      background-color: #fff;
+    }
+  }
+  &-icon__box {
+    display: none;
+  }
+  &-icon__box {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 92%;
+    padding: 0px 10px;
+  }
+  &-next--icon {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../assets/images//sale/next.svg");
+      display: inline-block;
+      width: 9px;
+      height: 16px;
+      cursor: pointer;
+    }
+  }
+  &-prev--icon {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../assets/images/sale/prev.svg");
+      display: inline-block;
+      width: 9px;
+      height: 16px;
+      cursor: pointer;
+    }
+  }
+  .product-name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #424551;
+    margin-bottom: 8px;
+  }
+  .product-price {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    color: #1e212c;
+  }
+  .card-feature,.card-bootom{
+    padding: 16px;
+  }
+}

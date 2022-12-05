@@ -1,0 +1,147 @@
+.panel {
+  &-filter {
+    & > *:not(:last-child) {
+      border-bottom: 1px solid #e5e8ed;
+    }
+    & > *:last-child .price {
+      overflow: hidden !important;
+      height: 185px;
+    }
+  }
+  &--search__input {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #9a9ca5;
+    padding: 6px 99px 9px 12px;
+    background: #ffffff;
+    border: 1px solid #d7dadd;
+    border-radius: 4px;
+  }
+  &-catalog--filter {
+    & > *:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  &-filter--search {
+    position: relative;
+  }
+  &-search--icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  &--list {
+    margin-top: 16px;
+    & > * {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    & > *:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+  &-filter--item > input {
+    margin-right: 8px;
+  }
+  &-box--info > *:first-child {
+    margin-right: 4px;
+  }
+  &-filter--text {
+    text-transform: capitalize;
+  }
+}
+.filter-product--count {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #9a9ca5;
+}
+.filter-product--text {
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+.result-tracker {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.sort-color {
+  &--list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    margin-top: 16px;
+    & > * {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  &--text {
+    text-transform: capitalize;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #787a80;
+  }
+}
+.input--color {
+  position: relative;
+  appearance: none;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.input-box {
+  border: 1px solid #17696a;
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.scroll--tracker {
+  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 166px;
+}
+.scroll--tracker::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 2px;
+}
+.scroll--tracker::-webkit-scrollbar-thumb {
+  background: #424551;
+}
+
+.scroll--tracker::-webkit-scrollbar-track {
+  background: #e5e8ed;
+}
+.minus {
+  cursor: pointer;
+}
+.height--none {
+  height: 0;
+  overflow: hidden;
+}
+.hide-filter__btn span {
+  display: inline-block;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}

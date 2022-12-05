@@ -1,0 +1,160 @@
+.modal-size {
+  & {
+    display: block;
+    border: 1px solid #e5e8ed;
+
+    box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16),
+      0px 26px 24px -10px rgba(30, 33, 44, 0.1),
+      0px 12px 10px -6px rgba(30, 33, 44, 0.08),
+      0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+    border-radius: 4px;
+  }
+}
+.size-modal {
+  &__container {
+  }
+  &__head {
+    text-align: center;
+    margin-bottom: calc(32px - (1920px - 100vw) / 47);
+  }
+  &__content {
+    padding: calc(48px - (1920px - 100vw) / 20);
+
+    position: relative;
+    cursor: pointer;
+  }
+  &--close__icon-wrap {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    z-index: 20;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &--title {
+    font-weight: 700;
+    font-size: calc(28px - (1920px - 100vw) / 47);
+    line-height: calc(150% - (1920px - 100vw) / 47);
+    color: #1e212c;
+  }
+  &__btn-group {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: calc(28px - (1920px - 100vw) / 47);
+  }
+  &__btn--list {
+    & > *:not(:last-child) {
+      margin-right: calc(12px - (1920px - 100vw) / 47);
+    }
+  }
+  &--btn {
+    padding: calc(10px - (1920px - 100vw) / 20)
+      calc(20px - (1920px - 100vw) / 20);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: calc(16px - (100% - 80%));
+    line-height: calc(160% - (10% * 1.2));
+    color: #9a9ca5;
+    border: 1px solid transparent;
+    background-color: #fff;
+    text-transform: capitalize;
+  }
+  .global-metric__head {
+    text-align: center;
+    margin-bottom: calc(16px - (1920px - 100vw) / 20);
+  }
+  .global-metric--title {
+    font-weight: calc(700 - (1920 - 100vw) / 47);
+    font-size: calc(18px - (1920 - 100vw) / 47);
+    line-height: 150%;
+    color: #1e212c;
+    text-transform: capitalize;
+  }
+  // Table
+  .size-chart__global-metric {
+  }
+  .global-metric__table-wrap {
+    border: 1px solid #e5e8ed;
+    border-radius: 4px;
+    padding-top: calc(16px - (100% - 1920px) / 1920);
+  }
+  .global-metric__table {
+    border-collapse: collapse;
+    font-family: "Lato";
+    font-style: normal;
+    width: 100%;
+  }
+  tr:nth-child(odd) {
+    background-color: #f4f5f7;
+  }
+  th {
+    font-weight: calc(400 - (100% - 1920px) / 1920);
+
+    font-size: calc(14px - (100% - 1920px) / 1920);
+    line-height: 150%;
+    color: #424551;
+    text-transform: capitalize;
+    text-align: left;
+    margin-right: calc(20px - (100% - 1920px) / 1920);
+    padding: calc(9px - (100% - 1920px) / 1920) 0px
+      calc(9px - (100% - 1920px) / 1920) calc(16px - (100% - 1920px) / 1920);
+  }
+  td {
+    font-weight: calc(400 - (100% - 1920px) / 1920);
+    font-size: calc(14px - (100% - 1920px) / 1920);
+    line-height: 150%;
+    color: #424551;
+  }
+  // footer
+  .equivalence {
+    padding-top: calc(32px - (100vw - 1920px) / 1920);
+    border: 1px solid #e5e8ed;
+    margin-top: calc(32px - (100vw - 1920px) / 1920);
+  }
+  .global-metric__equivalence {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: calc(24px - (100vw - 1920px) / 1920);
+  }
+  .equivalence--panel--text {
+    margin-right: calc(24px - (100vw - 1920px) / 1920);
+    & > h3 {
+      font-weight: calc(700 - (100vw - 1920px) / 1920);
+      font-size: calc(16px - (100vw - 1920px) / 1920);
+      line-height: 160%;
+      color: #1e212c;
+      white-space: nowrap;
+    }
+  }
+  // equivalence--panel--text
+  .equivalence--btn {
+    font-weight: calc(700 - (100vw - 1920px) / 1920);
+    font-size: calc(16px - (100vw - 1920px) / 1920);
+    line-height: 160%;
+    color: #17696a;
+    padding: calc(10px - (100vw - 1920px) / 1920)
+      calc(20px - (100vw - 1920px) / 1920);
+    margin-right: calc(12px - (100vw - 1920px) / 1920);
+  }
+  .equivalence-panel--text-incher {
+    font-weight: calc(700 - (100vw - 1920px) / 40);
+    font-size: calc(16px - (100vw - 1920px) / 1920);
+    line-height: 160%;
+    color: #9a9ca5;
+  }
+}
+
+.size--overlay {
+  align-items: center;
+  justify-content: center;
+}

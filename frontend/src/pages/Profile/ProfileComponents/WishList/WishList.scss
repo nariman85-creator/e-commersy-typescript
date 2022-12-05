@@ -1,0 +1,10 @@
+.wishlist {
+  padding-left: 135px;
+  &-carousel__item {
+  }
+  &-item__wrap {
+    & > *:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

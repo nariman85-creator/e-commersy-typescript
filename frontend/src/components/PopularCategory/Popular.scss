@@ -1,0 +1,43 @@
+.popular {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 0px;
+  }
+  &-head {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &--title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #1e212c;
+  }
+  &-list {
+    align-items: center;
+    justify-content: center;
+    & > * {
+      flex: 0 0 11%;
+    }
+    & > *:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
+.product {
+}
+.card-img__wrap {
+  border-radius: 100%;
+  overflow: hidden;
+}
+.card-text {
+  text-align: center;
+  padding: 14px 0px;
+}
+.product-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #1e212c;
+}

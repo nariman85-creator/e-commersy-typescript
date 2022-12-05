@@ -1,0 +1,119 @@
+.profile {
+  &-wrap__body {
+    padding-top: 40px;
+    padding-bottom: 180px;
+  }
+  &-container {
+    & > *:first-child {
+      flex: 0 0 285px;
+    }
+  }
+  &-control__box {
+    border: 1px solid #e5e8ed;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+      0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+      0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+      0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+  }
+  &-control__box--head {
+    padding: 20px 96px 20px 20px;
+  }
+  &-user__name {
+    // font-weight: 700;
+    // font-size: 20px;
+    // line-height: 150%;
+    // color: #424551;
+  }
+  &-user__email {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #787a80;
+  }
+  &-control__list {
+    & > * {
+      padding-top: 12px;
+      padding-left: 20px;
+      padding-bottom: 12px;
+      align-items: center;
+      cursor: pointer;
+    }
+    & > *.active {
+      background: #17696a;
+      color: white;
+    }
+  }
+  &-control--icon {
+    margin-right: 8px;
+  }
+  &-control--item__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+  }
+  &-info__wrap {
+    padding-left: 80px;
+  }
+  &-control--item__text::first-letter {
+    text-transform: capitalize;
+  }
+  &-info__wrap--head {
+    align-items: center;
+    padding-bottom: 40px;
+    & > *:last-child {
+      margin-left: auto;
+    }
+  }
+  &-info__head--title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 130%;
+    color: #1e212c;
+  }
+  &-info__head--icon {
+    align-items: center;
+    cursor: pointer;
+    color: #ff4242;
+    & > *:first-child {
+      margin-right: 8px;
+    }
+  }
+  &-info__table--box {
+    margin-bottom: 48px;
+  }
+  &-info--field {
+    background: #ffffff;
+    border: 1px solid #d7dadd;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+    padding: 13px 200px 13px 16px;
+  }
+  &-info--field__name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+  }
+  &-info--btn {
+    background: #17696a;
+    border-radius: 4px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+  }
+}
+tr {
+  & > *:first-child {
+    padding-right: 30px;
+  }
+}

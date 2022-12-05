@@ -1,0 +1,72 @@
+.services {
+  &-body {
+    padding: 120px 0px 140px 0px;
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  &-item {
+    position: relative;
+    &:nth-child(1)::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 2px;
+      background-color: #e2e2e4;
+      right: -25%;
+      top: 0;
+    }
+    &:nth-child(2)::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 2px;
+      background-color: #e2e2e4;
+      right: -25%;
+      top: 0;
+    }
+
+    &:nth-child(3)::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 2px;
+      background-color: #e2e2e4;
+      right: -25%;
+      top: 0;
+    }
+  }
+  &--icon {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    margin-bottom: 24px;
+  }
+  &-info__wrap {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1e212c;
+  }
+  &-info {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #787a80;
+  }
+}
+.delivery {
+  background-image: url("../../assets/images/services/ic-delivery.svg");
+}
+.call {
+  background-image: url("../../assets/images/services/ic-call-center.svg");
+}
+.shield {
+  background-image: url("../../assets/images/services/ic-shield.svg");
+}
+.payment {
+  background-image: url("../../assets/images/services/ic-credit-card.svg");
+}

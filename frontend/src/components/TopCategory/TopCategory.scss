@@ -1,0 +1,18 @@
+.top-category {
+ margin-top: -60px;
+ z-index: 5;
+ position: relative;
+ 
+  &-list {
+    & > *:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.card-bottom {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  padding-top: 16px;
+}

@@ -1,0 +1,53 @@
+.arrivals {
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    padding: 180px 0px;
+    text-align: center;
+  }
+  &--title {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1e212c;
+    margin-bottom: 60px;
+  }
+  &-desc--text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #787a80;
+    margin-top: 24px;
+    line-height: 1.2;
+  }
+  &-carousel__list {
+    display: flex;
+    transition: transform 2s ease-in;
+    & > * {
+      flex: 0 0 15%;
+    }
+    & > * {
+      margin: 0px 11px;
+    }
+  }
+  &-indicarors {
+    margin-top: 80px;
+  }
+  &-indicators__list{
+    align-items: center;
+    justify-content: center;
+    &>*:not(:last-child){
+      margin-right: 12px;
+    }
+  }
+  &-indicators__item {
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background-color: #b3b7bc;
+  }
+  &-indicators__item.active{
+    background-color: #424551;
+  }
+}
+

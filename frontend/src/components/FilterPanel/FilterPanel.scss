@@ -1,0 +1,127 @@
+.filter {
+  &-panel__sort {
+    align-items: center;
+    justify-content: center;
+    & > *:first-child {
+      margin-right: 12px;
+    }
+  }
+  &-panel__pager {
+    align-items: center;
+    justify-content: space-between;
+    & > *:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+.sort--title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+}
+.dropdown-list {
+  position: relative;
+  & > *:first-child {
+    background: #ffffff;
+    border: 1px solid #d7dadd;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #424551;
+    padding: 12px 91px 12px 16px;
+    position: relative;
+  }
+  &__icon--wrap {
+    position: absolute;
+    top: 36%;
+    right: 14px;
+  }
+
+  &--icon {
+    cursor: pointer;
+  }
+}
+
+.dropdown-item--wrap {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+.dropdown--item {
+  width: 100%;
+  & > * {
+    cursor: pointer;
+    padding: 3px 0px 5px 0px;
+    border-radius: 3px;
+    padding-left: 17px;
+  }
+  & > *:hover {
+    background-color: #eceef3;
+  }
+  & > *:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}
+
+.pager-select--count {
+  border: 1px solid #d7dadd;
+  border-radius: 4px;
+  padding: 12px 47px 12px 16px;
+  position: relative;
+  width: 40px;
+}
+.select-count {
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  width: 17px;
+  height: 21px;
+}
+.indecrease {
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  right: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.increase {
+  margin-bottom: 5px;
+  &:hover {
+    transform: scale(1.7);
+  }
+}
+.decrease {
+  &:hover {
+    transform: scale(1.7);
+  }
+}
+.pagination--list {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  & > *:not(:last-child) {
+    margin-right: 20px;
+  }
+  & > * {
+    cursor: pointer;
+  }
+  & > *:hover {
+    color: #9a9ca5;
+  }
+  & > *:last-child::before {
+    content: "";
+    background-image: url("../../pages/Category/image/Right.svg");
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+  }
+}

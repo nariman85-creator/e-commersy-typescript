@@ -1,0 +1,135 @@
+.order {
+  padding-left: 135px;
+  &-info__wrap--head {
+    & > *:last-child {
+      margin-left: auto;
+    }
+  }
+  &-item__card--body {
+    background-color: #f4f5f6;
+    padding: 20px 24px;
+  }
+  &-list {
+    border-bottom: 1px solid #e5e8ed;
+    padding-bottom: 24px;
+  }
+  &-info__wrap--head {
+    margin-left: auto;
+  }
+  &-info__head--select {
+    width: 263px;
+    height: 44px;
+    align-items: center;
+  }
+  &-info__head--select__text {
+    vertical-align: middle;
+  }
+  &-item--head {
+    padding: 24px 0px;
+  }
+  &-item--head__list {
+    & > *:not(:first-child) {
+      margin-left: auto;
+    }
+  }
+  &-item--icon {
+    display: flex;
+    align-items: center;
+  }
+  &-item__id {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #17696a;
+  }
+  .clock--icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+  &-item__date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    border: 1px solid #787a80;
+  }
+  &-item__progress {
+    padding: 3px 8px;
+    background-color: #5a87fc;
+    border-radius: 4px;
+    color: white;
+  }
+  &-item__price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1e212c;
+  }
+  &-shopping--info__list {
+    padding-top: 16px;
+    & > *:not(:first-child) {
+      margin-left: auto;
+    }
+  }
+  &-shopping--info__item--text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #787a80;
+  }
+  &-shopping--info__item--price {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #1e212c;
+  }
+  &-item--footer {
+    padding-top: 24px;
+    align-items: center;
+    justify-content: end;
+  }
+  &-item--footer-content {
+    align-items: center;
+  }
+  &-tracking__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1e212c;
+    white-space: nowrap;
+    margin-right: 20px;
+  }
+  &-tracking--btn {
+    border: 1px solid #17696a;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    color: #17696a;
+  }
+  &-info--footer {
+    align-items: center;
+    justify-content: center;
+  }
+  &-more {
+    display: flex;
+    align-items: center;
+  }
+  .convert--icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+  &-info--footer__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+  }
+}
+.list-input {
+  height: 100%;
+  margin-left: 12px;
+}

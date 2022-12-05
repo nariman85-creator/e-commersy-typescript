@@ -1,0 +1,19 @@
+.list--reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.link--reset {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.img--reset {
+  margin: 0;
+  top: 0;
+  max-width: 100%;
+  width: 100%;
+  object-fit: contain;
+}

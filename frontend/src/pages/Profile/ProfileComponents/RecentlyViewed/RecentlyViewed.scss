@@ -1,0 +1,10 @@
+.recently-viewed{
+ padding-left: 135px;
+ &__card--body{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto;
+  row-gap: 60px;
+  column-gap: 30px;
+ }
+}

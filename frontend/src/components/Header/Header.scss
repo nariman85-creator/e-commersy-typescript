@@ -1,0 +1,215 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  &-shop__info {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #a5a6ab;
+  }
+  // Header-Top////////////////////////////
+  &-top {
+    background-color: #1e212c;
+  }
+  &-top__container {
+    padding: 11px 0px;
+  }
+  &-contact {
+    margin-right: 194px;
+  }
+  &-contact__text {
+    margin-right: 5px;
+  }
+  &-nav__list {
+    display: flex;
+    & > *:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+  &-shop__select {
+    margin-left: auto;
+  }
+  &-top__profile {
+    margin-left: auto;
+  }
+  &-select__icon {
+    background-image: url("../../assets/images/header/header-top/flag-usa.svg");
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    margin-right: 12px;
+  }
+  &-select__btn {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    cursor: pointer;
+    & > *:first-child {
+      margin-left: 5px;
+    }
+  }
+  &-top__profile-info {
+    height: 24px;
+    & > a {
+      display: contents;
+    }
+  }
+  &-top__profile-user--info {
+    display: inline-block;
+    margin-left: 10px;
+    text-transform: capitalize;
+    letter-spacing: 1.02px;
+  }
+  &-profile__icon {
+    background-image: url("../../assets/images/header/header-top/Profile.svg");
+    background-position: center 1px;
+    padding: 2px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+  }
+  // Header-Middle
+  &-middle {
+    position: relative;
+  }
+  &-shop__items {
+    display: flex;
+    padding: 31px 0px;
+    align-items: center;
+  }
+  &-bottom {
+    background-color: #17696a;
+    color: #fff;
+  }
+  &-bootom__item {
+    padding: 8px 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  &-left--item {
+    background-image: url("../../assets/images/header/Left-chevron.svg");
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+  }
+  &-right--item {
+    background-image: url("../../assets/images/header/Right-chevron.svg");
+    width: 16px;
+    height: 16px;
+    margin-left: 12px;
+  }
+}
+// Shop
+.shop {
+  &-product__list {
+    & > *:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    & > *:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  &-product__item:first-letter {
+    text-transform: capitalize;
+  }
+  &-product__item.active {
+    color: #ff4242;
+  }
+  &-product__item.active .header--modal {
+    display: block;
+    left: 0;
+    right: 0;
+  }
+  &-product__item .header--modal {
+    display: none;
+    left: 0;
+    right: 0;
+  }
+
+  &-logo {
+    display: inline-block;
+    background-image: url("../../assets/images/header/header-middle/logo.svg");
+    width: 130px;
+    height: 21px;
+  }
+  &-search__box {
+    position: relative;
+    border: 1px solid #d7dadd;
+    border-radius: 4px;
+  }
+  &-modal--text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    color: #1e212c;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  .search-input {
+    font-family: LatoRegular;
+    font-size: 14px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #9a9ca5;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 11px 234px 11px 16px;
+  }
+}
+.basket-item__count {
+  width: 23px;
+  height: 20px;
+  background: #03cea4;
+  border-radius: 4px;
+  padding: 1px 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-info__like {
+  margin-right: 40px;
+  align-items: baseline;
+}
+.user-info__basket {
+  align-items: center;
+}
+.link-text {
+  font-size: 12px;
+  line-height: 150%;
+  text-decoration-line: underline;
+}
+.shop--list {
+  & > *:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+.header--modal {
+  display: block;
+  position: absolute;
+  z-index: 3000;
+  left: 0;
+  right: 0;
+}
+.product-catalog--list {
+  & > * li::first-letter {
+    text-transform: uppercase;
+  }
+  & > *:hover {
+    text-decoration: underline;
+  }
+}
+.avatar {
+  border-radius: 100%;
+}

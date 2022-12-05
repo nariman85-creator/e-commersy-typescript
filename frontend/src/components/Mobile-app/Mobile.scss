@@ -1,0 +1,49 @@
+.mobile {
+  background-color: #1e212c;
+  &-content {
+    display: flex;
+    & > * {
+      flex: 0 0 50%;
+    }
+  }
+  &-content__banner {
+    position: relative;
+    top: -28px;
+    &::before {
+      content: "";
+      background-image: url("../../assets//images/mobile-app/image\ \(1\).svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block;
+      width: 490px;
+      height: 330px;
+    }
+  }
+  &-app__title {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 48px;
+  }
+  &-content__app {
+    padding: 60px 0px;
+  }
+  &-app__body {
+    display: flex;
+    & > *:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+  &-app__store {
+    width: 162px;
+    height: 48px;
+  }
+}
+.app-store {
+  background-image: url("../../assets/images/mobile-app/app-store.png");
+}
+.google-store {
+  background-image: url("../../assets//images/mobile-app/google-play.png");
+}
