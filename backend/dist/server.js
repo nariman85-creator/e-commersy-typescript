@@ -12,6 +12,9 @@ const routes_1 = __importDefault(require("./routes"));
 const userRouter_1 = __importDefault(require("./routes/userRouter"));
 const app = (0, express_1.default)();
 const PORT = process.env.PORT || 5000;
+app.get('/', (req, res) => {
+    res.send("Hello")
+});
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 app.use("/api/products", routes_1.default);
